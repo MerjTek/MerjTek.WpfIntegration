@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerjTek.WpfIntegration.MonoGameControlWinDX", "MerjTek.WpfIntegration.MonoGameControlWinDX.csproj", "{630B7C1E-A449-423A-A7A6-2D6787911F38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerjTek.WpfIntegration.MonoGameControlWinGL", "MerjTek.WpfIntegration.MonoGameControlWinGL.csproj", "{F64D29C1-B2B6-41E5-88C8-9EB7A28CEDED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfIntegrationTest", "WpfIntegrationTest\WpfIntegrationTest.csproj", "{3E98D52A-791A-49D6-BE88-A2B0E31F493A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{630B7C1E-A449-423A-A7A6-2D6787911F38} = {630B7C1E-A449-423A-A7A6-2D6787911F38}
+		{F64D29C1-B2B6-41E5-88C8-9EB7A28CEDED} = {F64D29C1-B2B6-41E5-88C8-9EB7A28CEDED}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{630B7C1E-A449-423A-A7A6-2D6787911F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630B7C1E-A449-423A-A7A6-2D6787911F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630B7C1E-A449-423A-A7A6-2D6787911F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630B7C1E-A449-423A-A7A6-2D6787911F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64D29C1-B2B6-41E5-88C8-9EB7A28CEDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64D29C1-B2B6-41E5-88C8-9EB7A28CEDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64D29C1-B2B6-41E5-88C8-9EB7A28CEDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64D29C1-B2B6-41E5-88C8-9EB7A28CEDED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E98D52A-791A-49D6-BE88-A2B0E31F493A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E98D52A-791A-49D6-BE88-A2B0E31F493A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E98D52A-791A-49D6-BE88-A2B0E31F493A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E98D52A-791A-49D6-BE88-A2B0E31F493A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
