@@ -16,6 +16,7 @@ There are currently 2 nuget packages available:
 
 MonoGame (WindowsGL):
 https://www.nuget.org/packages/MerjTek.WpfIntegration.MonoGameControlWinGL/
+
 MonoGame (WindowsDX):
 https://www.nuget.org/packages/MerjTek.WpfIntegration.MonoGameControlWinDX/
 
