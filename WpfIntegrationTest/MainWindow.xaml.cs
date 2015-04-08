@@ -59,10 +59,8 @@ namespace WpfIntegrationTest
             Microsoft.Xna.Framework.Matrix view = Microsoft.Xna.Framework.Matrix.CreateLookAt(new Vector3(0, 0, 2.5f), Vector3.Zero, Vector3.Up);
             Microsoft.Xna.Framework.Matrix projection = Microsoft.Xna.Framework.Matrix.CreatePerspectiveFieldOfView(1, e.GraphicsDevice.Viewport.AspectRatio, 1, 10);
 
-            // Get the color from our sliders
-            Microsoft.Xna.Framework.Color color = Microsoft.Xna.Framework.Color.Green;
-
             // Draw a cube
+            Microsoft.Xna.Framework.Color color = Microsoft.Xna.Framework.Color.Green;
             cube.Draw(world, view, projection, color);
         }
 
@@ -84,10 +82,8 @@ namespace WpfIntegrationTest
             Microsoft.Xna.Framework.Matrix view = Microsoft.Xna.Framework.Matrix.CreateLookAt(new Vector3(0, 0, 2.5f), Vector3.Zero, Vector3.Up);
             Microsoft.Xna.Framework.Matrix projection = Microsoft.Xna.Framework.Matrix.CreatePerspectiveFieldOfView(1, e.GraphicsDevice.Viewport.AspectRatio, 1, 10);
 
-            // Get the color from our sliders
-            Microsoft.Xna.Framework.Color color = Microsoft.Xna.Framework.Color.Blue;
-
             // Draw a cube
+            Microsoft.Xna.Framework.Color color = Microsoft.Xna.Framework.Color.Blue;
             cube.Draw(world, view, projection, color);
         }
 
@@ -109,10 +105,8 @@ namespace WpfIntegrationTest
             Microsoft.Xna.Framework.Matrix view = Microsoft.Xna.Framework.Matrix.CreateLookAt(new Vector3(0, 0, 2.5f), Vector3.Zero, Vector3.Up);
             Microsoft.Xna.Framework.Matrix projection = Microsoft.Xna.Framework.Matrix.CreatePerspectiveFieldOfView(1, e.GraphicsDevice.Viewport.AspectRatio, 1, 10);
 
-            // Get the color from our sliders
-            Microsoft.Xna.Framework.Color color = Microsoft.Xna.Framework.Color.Yellow;
-
             // Draw a cube
+            Microsoft.Xna.Framework.Color color = Microsoft.Xna.Framework.Color.Yellow;
             cube.Draw(world, view, projection, color);
         }
 
@@ -134,10 +128,8 @@ namespace WpfIntegrationTest
             Microsoft.Xna.Framework.Matrix view = Microsoft.Xna.Framework.Matrix.CreateLookAt(new Vector3(0, 0, 2.5f), Vector3.Zero, Vector3.Up);
             Microsoft.Xna.Framework.Matrix projection = Microsoft.Xna.Framework.Matrix.CreatePerspectiveFieldOfView(1, e.GraphicsDevice.Viewport.AspectRatio, 1, 10);
 
-            // Get the color from our sliders
-            Microsoft.Xna.Framework.Color color = Microsoft.Xna.Framework.Color.Red;
-
             // Draw a cube
+            Microsoft.Xna.Framework.Color color = Microsoft.Xna.Framework.Color.Red;
             cube.Draw(world, view, projection, color);
         }
 
