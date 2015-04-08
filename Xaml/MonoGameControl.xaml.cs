@@ -51,9 +51,14 @@ namespace MerjTek.WpfIntegration
         }
 
         /// <summary>
-        /// Invoked when the XnaControl needs to be redrawn.
+        /// Invoked when the control is loaded.
         /// </summary>
-        public Action<GraphicsDevice> DrawFunction;
+        public event EventHandler<GraphicsDeviceEventArgs> ControlLoaded;
+
+        /// <summary>
+        /// Invoked when the control needs to be redrawn.
+        /// </summary>
+        public event EventHandler<GraphicsDeviceEventArgs> Render;
 
         #endregion
 
@@ -87,6 +92,10 @@ namespace MerjTek.WpfIntegration
 
                 // hook the rendering event
                 CompositionTarget.Rendering += CompositionTarget_Rendering;
+
+                // Invoke the ControlLoaded event
+                if (ControlLoaded != null)
+                    ControlLoaded(this, new GraphicsDeviceEventArgs(graphicsService.GraphicsDevice));
             }
         }
 
@@ -108,12 +117,12 @@ namespace MerjTek.WpfIntegration
         }
 
         #endregion
-        #region Render
+        #region RenderControl
 
         /// <summary>
         /// Draws the control and allows subclasses to override the default behavior of delegating the rendering.
         /// </summary>
-        protected virtual void Render()
+        protected virtual void RenderControl()
         {
             // Set the background color
             int r = (Background as SolidColorBrush).Color.R;
@@ -123,8 +132,8 @@ namespace MerjTek.WpfIntegration
             GraphicsDevice.Clear(new Microsoft.Xna.Framework.Color(r, g, b, a));
 
             // invoke the draw delegate so someone will draw something pretty
-            if (DrawFunction != null)
-                DrawFunction(GraphicsDevice);
+            if (Render != null)
+                Render(this, new GraphicsDeviceEventArgs(GraphicsDevice));
         }
 
         #endregion
@@ -139,7 +148,7 @@ namespace MerjTek.WpfIntegration
             GraphicsDevice.SetRenderTarget(imageSource.RenderTarget);
 
             // allow the control to draw
-            Render();
+            RenderControl();
 
             // unset the render target
             GraphicsDevice.SetRenderTarget(null);

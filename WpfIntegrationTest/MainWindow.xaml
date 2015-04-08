@@ -12,10 +12,10 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-            
-        <integrate:MonoGameControl Grid.Row="0" Grid.Column="0" Background="Red" Margin="3" />
-        <integrate:MonoGameControl Grid.Row="0" Grid.Column="1" Background="Yellow" Margin="3" />
-        <integrate:MonoGameControl Grid.Row="1" Grid.Column="0" Background="Blue" Margin="3" />
-        <integrate:MonoGameControl Grid.Row="1" Grid.Column="1" Background="Green" Margin="3" />
+
+        <integrate:MonoGameControl x:Name="Red" Grid.Row="0" Grid.Column="0" Background="Red" Margin="3" ControlLoaded="MonoGameControl_Loaded" Render="Red_Render" />
+        <integrate:MonoGameControl x:Name="Yellow" Grid.Row="0" Grid.Column="1" Background="Yellow" Margin="3" ControlLoaded="MonoGameControl_Loaded" Render="Yellow_Render" />
+        <integrate:MonoGameControl x:Name="Blue" Grid.Row="1" Grid.Column="0" Background="Blue" Margin="3" ControlLoaded="MonoGameControl_Loaded" Render="Blue_Render" />
+        <integrate:MonoGameControl x:Name="Green" Grid.Row="1" Grid.Column="1" Background="Green" Margin="3" ControlLoaded="MonoGameControl_Loaded" Render="Green_Render" />
     </Grid>
 </Window>
